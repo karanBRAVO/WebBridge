@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>WebSocket Client App</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>WebSocket Chat</h1>
+
+    <div class="form-wrapper">
+        <div class="form-input-wrapper">
+            <label for="_url_input">Server URL:</label>
+            <input id="_url_input" placeholder="ws://127.0.0.1:8080" value="ws://localhost:8080" />
+        </div>
+        <div class="form-input-wrapper">
+            <label for="_name_input">Your Name:</label>
+            <input id="_name_input" placeholder="John Doe" />
+        </div>
+        <div>
+            <button type="button" id="_connect_button">Connect</button>
+            <button type="button" id="_disconnect_button">Disconnect</button>
+        </div>
+    </div>
+
+    <pre id="_messages"></pre>
+
+    <div style="display: flex; align-items: center; max-width: 420px; width: 100%;">
+        <input id="_message_input" placeholder="Type a message..." />
+        <button type="button" id="_send_button">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
