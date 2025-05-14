@@ -1,6 +1,18 @@
 # WebBridge
 A lightweight and efficient WebSocket/HTTP server written in C++, paired with a modern HTML, CSS, and JavaScript client for seamless real-time communication.
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Features
 - **WebSocket Server**: Real-time, bidirectional communication using WebSocket protocol.
 - **HTTP Server**: Serve static files or handle HTTP requests efficiently.
@@ -10,7 +22,9 @@ A lightweight and efficient WebSocket/HTTP server written in C++, paired with a 
 
 ## Tech Stack
 - **Server**: C++ (WebSocket/HTTP implementation using `Boost.Asio` and `Boost.Beast`)
-- **Client**: HTML, CSS (for styling), and JavaScript (for WebSocket communication)
+- **Client**:
+	- GUI: HTML, CSS (for styling), and JavaScript (for WebSocket communication)
+ 	- CLI: C++ (using `Boost.Asio` and `Boost.Beast`)
 
 ## Getting Started
 
@@ -18,6 +32,7 @@ A lightweight and efficient WebSocket/HTTP server written in C++, paired with a 
 - A C++ compiler supporting C++11 or later
 - Basic knowledge of WebSockets and HTTP
 - A browser to test the client-side application
+- Boost Library: [download Boost](https://www.boost.org/releases/latest/)
 
 ### Installation
 
@@ -49,3 +64,25 @@ cd WebBridge
 	```
 
 6. Open your web browser and navigate to `http://localhost:8080` to see the client interface.
+
+`note`: If you have have build the project in Visual Studio then you can directly run
+```bash
+.\x64\Debug\ClipTrans.exe 192.168.31.189 8080 .\client\
+# replace "192.168.31.189" with your ip
+```
+
+Get your IP Address using below command
+```bash
+ipconfig
+```
+
+## GUI Preview
+Visit: http://192.168.31.189:8080/
+
+![Screenshot 2025-05-14 213600](https://github.com/user-attachments/assets/f610f398-afaa-47b8-b7b9-556d694c886a)
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
