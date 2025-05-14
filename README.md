@@ -76,6 +76,8 @@ Get your IP Address using below command
 ipconfig
 ```
 
+7. For `cli` client see [WebBridge Wikis](https://github.com/karanBRAVO/WebBridge/wiki/WebSocket-Client-(cpp))
+
 ## GUI Preview
 Visit: http://192.168.31.189:8080/
 
